@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,3 +11,10 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# Movie-Recommendation-Application
+
+I have made a Movie recomandation Application using react that recomand a movie based on the  category. I  have use a rapid api for a recomandation for the recomandation.
+
+If you are facing problem while fetching images you have to use VPN.
+>>>>>>> c81118ec5a61ff1c58b3d801f46d2714ceab383a
