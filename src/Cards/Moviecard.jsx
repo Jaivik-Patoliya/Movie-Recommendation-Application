@@ -16,7 +16,7 @@ function MovieCard({ movie }) {
     alt={movie.title || "Unknown Title"} 
   />
   <div className="backdrop-blur-md bg-black bg-opacity-40 p-4">
-    {/* Text content (not blurred) */}
+    
     <div className="relative z-10">
       <h3 className="text-lg font-bold text-white truncate">{movie.title || "Untitled"}</h3>
       <div className="flex justify-between items-center mt-2">
