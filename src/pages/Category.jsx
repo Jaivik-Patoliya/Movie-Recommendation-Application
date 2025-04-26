@@ -56,10 +56,10 @@ function Category() {
     backgroundRepeat: 'no-repeat'
   }}
 >
-  {/* Semi-transparent overlay for better readability */}
+ 
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
   
-  <div className="relative z-10"> {/* This ensures content stays above the overlay */}
+  <div className="relative z-10"> 
     <h1 className="text-5xl font-bold mb-8 text-white">{category} Movies</h1>
     
     {loading ? (

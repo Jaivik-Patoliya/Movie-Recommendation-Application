@@ -42,7 +42,7 @@ function MovieDetails() {
     if (loading) return <div className="text-white text-center py-20">Loading...</div>;
     return (
         <div className="movie-details bg-gray-900 text-white min-h-screen">
-            {/* Backdrop Section */}
+            
             <div className="relative h-96 w-full">
                 <img
                     src={movie.primaryImage}
@@ -66,9 +66,9 @@ function MovieDetails() {
                 </div>
             </div>
 
-            {/* Main Content */}
+            
             <div className="container mx-auto px-4 py-8 grid md:grid-cols-3 gap-8">
-                {/* Left Column */}
+                
                 <div className="md:col-span-2">
                     <div className="flex items-center space-x-4 mb-6">
                         <div className="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-bold">
@@ -111,7 +111,7 @@ function MovieDetails() {
 
                 </div>
 
-                {/* Right Column */}
+                
                 <div className="space-y-6">
                     <div className="bg-gray-800 p-4 rounded-lg">
                         <h3 className="text-xl font-bold mb-3">Details</h3>

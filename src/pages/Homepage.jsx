@@ -26,7 +26,7 @@ function Homepage(){
       <div
       className="w-full h-screen bg-cover bg-center bg-no-repeat text-white flex flex-col justify-center items-center px-4"
       style={{
-        backgroundImage: `url(${bgImg})`, // replace with correct image path
+        backgroundImage: `url(${bgImg})`, 
        
       }}
     >
@@ -37,7 +37,7 @@ function Homepage(){
         watching for the first time today?
       </h2>
 
-      {/* Dropdown Section */}
+      
       <div className=" text-black mt-8 p-6 rounded-md shadow-md flex flex-col items-center gap-4 w-full max-w-md">
         <div className="w-full">
           <label className="block text-left font-semibold mb-1 text-white">Select Category:</label>
