@@ -15,3 +15,7 @@ I have made a Movie recomandation Application using react that recomand a movie 
 
 If you are facing problem while fetching images you have to use VPN.
 
+1. first you neeed to select category for movie and then minimum rating for the category and then click on the give recommendation button.
+
+    ![App Screenshot](Screenshot/Screenshot 2025-04-26 110017.png)
+2. 
