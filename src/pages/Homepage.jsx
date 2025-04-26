@@ -1,7 +1,7 @@
 import CategoryCard from "@/Cards/CategoryCard";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import bgImg from "@/assets/bg.jpg"; // Adjust this path based on your project structure
+import bgImg from "@/assets/bg.jpg"; 
 
 const categories = [
     "Action",
