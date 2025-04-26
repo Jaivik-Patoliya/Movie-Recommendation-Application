@@ -16,6 +16,14 @@ I have made a Movie recomandation Application using react that recomand a movie 
 If you are facing problem while fetching images you have to use VPN.
 
 1. first you neeed to select category for movie and then minimum rating for the category and then click on the give recommendation button.
+   
+    ![App Screenshot](Screenshot/Home.png)
+2. After that on the second page api recommends 10 movies of selected category and minimum rating.
+   
+ ![App Screenshot](Screenshot/Recommend.png)
 
-    ![App Screenshot](Screenshot/Screenshot 2025-04-26 110017.png)
-2. 
+3. To see the details of any movie  click  on the view details button and it shows the details like release year, rating , watch time, language, country, director, description and cast.
+
+ ![App Screenshot](Screenshot/Details.png)
+
+     
