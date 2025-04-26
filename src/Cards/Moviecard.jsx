@@ -1,28 +1,37 @@
+import { useNavigate } from "react-router-dom";
 
 
 
 function MovieCard({ movie }) {
-  console.log('Image URL:', movie.image);
+  const navigate = useNavigate();
 
+  const handleViewDetails = () => {
+    navigate(`/movies/${movie.imdbCode}`, { state: { movie } });
+  };
   return (
-    <div className="p-3 m-5 rounded w-48 text-center bg-white shadow-lg">
-      <img 
-        className="w-full h-[250px] object-cover rounded" 
-        src={movie.image ? movie.image : 'https://via.placeholder.com/250'}
-        alt={movie.title || "Unknown Title"} 
-      />
-      <h3 className="mt-2 text-lg font-bold">{movie.title || "Untitled"}</h3>
-      <p className="text-base text-gray-500">Year: {movie.year || "N/A"}</p>
-      <p className="text-base text-gray-500">⭐ {movie.rating || "N/A"}</p>
-      <a 
-        href={`https://www.imdb.com/title/${movie.imdbCode}`} 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="text-blue-500 mt-2 inline-block"
-      >
-        View on IMDb
-      </a>
+    <div className="rounded w-64 text-center bg-transparent backdrop-blur-sm border border-gray-700 shadow-lg hover:shadow-xl transition-all duration-300">
+  <img 
+    className="w-full h-[300px] object-contain bg-black" 
+    src={movie.image ? movie.image : 'https://via.placeholder.com/250'}
+    alt={movie.title || "Unknown Title"} 
+  />
+  <div className="backdrop-blur-md bg-black bg-opacity-40 p-4">
+    {/* Text content (not blurred) */}
+    <div className="relative z-10">
+      <h3 className="text-lg font-bold text-white truncate">{movie.title || "Untitled"}</h3>
+      <div className="flex justify-between items-center mt-2">
+        <span className="text-gray-300 text-sm">Year: {movie.year || "N/A"}</span>
+        <span className="text-yellow-400">⭐ {movie.rating || "N/A"}</span>
+      </div>
+      <button 
+          className="mt-3 text-yellow-300 hover:text-yellow-200 text-sm"
+          onClick={handleViewDetails}
+        >
+          View Details →
+        </button>
     </div>
+  </div>
+</div>
   );
 }
 
